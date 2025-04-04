@@ -1,11 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Personal Site</title>
+  <title>Financial Times Style Blog</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: "Georgia", serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    a {
+      text-decoration: none;
+      color: #0072ce;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Header */
+    header {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      padding: 20px 40px;
+    }
+    
+    header .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #111;
+    }
+    
+    nav {
+      margin-top: 10px;
+    }
+    
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+    
+    nav ul li {
+      margin-right: 20px;
+    }
+    
+    nav ul li a {
+      font-size: 0.9em;
+      color: #555;
+    }
+    
+    /* Main Content Area */
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 20px 40px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    
+    article {
+      margin-bottom: 40px;
+    }
+    
+    article h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #111;
+    }
+    
+    article p {
+      margin: 0 0 15px 0;
+    }
+    
+    article .pub-date {
+      color: #888;
+      font-size: 0.8em;
+    }
+    
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #fff;
+      border-top: 1px solid #ddd;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome!</h1>
-  <p>This site is hosted on GitHub Pages.</p>
+  <header>
+    <div class="logo">Financial Times Blog</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Markets</a></li>
+        <li><a href="#">Economy</a></li>
+        <li><a href="#">Technology</a></li>
+        <li><a href="#">Opinion</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <article>
+      <h2>Market Trends: Analyzing the Shifts in Global Economies</h2>
+      <p class="pub-date">Published on September 1, 2025</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae magna at nulla commodo cursus. Integer in mauris vel justo interdum pretium.</p>
+      <p><a href="#">Read more &raquo;</a></p>
+    </article>
+    
+    <article>
+      <h2>Economic Forecast: What Lies Ahead for Investors?</h2>
+      <p class="pub-date">Published on August 28, 2025</p>
+      <p>Suspendisse potenti. Praesent tincidunt, mi in blandit lobortis, nulla arcu ultricies tortor, non tincidunt odio nunc non quam. Curabitur vitae ex et velit porta mollis.</p>
+      <p><a href="#">Read more &raquo;</a></p>
+    </article>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Financial Times Blog. All rights reserved.</p>
+  </footer>
 </body>
 </html>
