@@ -58,6 +58,9 @@ h3 {
   float: right;
   color: #888;
 }
+.place {
+  float: right;
+}
 .subsection {
   margin-bottom: 20px;
   clear: both;
