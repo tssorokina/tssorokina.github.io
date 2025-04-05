@@ -2,130 +2,330 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tatiana Sorokina - CV / Portfolio</title>
   <style>
     /* Global Styles */
     body {
-      font-family: "Georgia", serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f5f5dc; /* Beige base color */
-      color: #333;
+      font-family: Arial, sans-serif;
       line-height: 1.6;
-    }
-    
-    a {
-      text-decoration: none;
-      color: #0072ce;
-    }
-    
-    a:hover {
-      text-decoration: underline;
-    }
-    
-    /* Header */
-    header {
-      background: #fff;
-      border-bottom: 1px solid #ddd;
-      padding: 20px 40px;
-    }
-    
-    header .logo {
-      font-size: 1.8em;
-      font-weight: bold;
-      color: #111;
-    }
-    
-    nav {
-      margin-top: 10px;
-    }
-    
-    nav ul {
-      list-style: none;
-      padding: 0;
       margin: 0;
-      display: flex;
+      padding: 20px;
+      background-color: #f5f5f5;
+      color: #333;
     }
-    
-    nav ul li {
-      margin-right: 20px;
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    
-    nav ul li a {
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header .contact-info {
+      margin-top: 10px;
       font-size: 0.9em;
       color: #555;
     }
-    
-    /* Main Content Area */
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      background: #fff;
-      padding: 20px 40px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    section {
+      margin-bottom: 30px;
     }
-    
-    article {
-      margin-bottom: 40px;
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+      color: #0072ce;
     }
-    
-    article h2 {
-      font-size: 1.5em;
-      margin-bottom: 10px;
-      color: #111;
+    h3 {
+      margin: 0;
+      padding: 0;
     }
-    
-    article p {
-      margin: 0 0 15px 0;
+    .subsection {
+      margin-bottom: 20px;
     }
-    
-    article .pub-date {
+    .date {
+      float: right;
       color: #888;
-      font-size: 0.8em;
     }
-    
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #fff;
-      border-top: 1px solid #ddd;
-      margin-top: 40px;
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table td {
+      padding: 5px;
+      vertical-align: top;
+    }
+    table td:first-child {
+      font-weight: bold;
+      width: 150px;
+    }
+    a {
+      color: #0072ce;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo">Blog</div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Markets</a></li>
-        <li><a href="#">Economy</a></li>
-        <li><a href="#">Technology</a></li>
-        <li><a href="#">Opinion</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <main>
-    <article>
-      <h2>Lorem ipsum dolor ...</h2>
-      <p class="pub-date">Published on September 1, 2025</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae magna at nulla commodo cursus. Integer in mauris vel justo interdum pretium.</p>
-      <p><a href="#">Read more &raquo;</a></p>
-    </article>
-    
-    <article>
-      <h2>Suspendisse potenti...</h2>
-      <p class="pub-date">Published on August 28, 2025</p>
-      <p>Suspendisse potenti. Praesent tincidunt, mi in blandit lobortis, nulla arcu ultricies tortor, non tincidunt odio nunc non quam. Curabitur vitae ex et velit porta mollis.</p>
-      <p><a href="#">Read more &raquo;</a></p>
-    </article>
-  </main>
-  
-  <footer>
-    <p>&copy; All rights reserved.</p>
-  </footer>
+  <div class="container">
+    <header>
+      <h1>Tatiana Sorokina</h1>
+      <div class="contact-info">
+        +33 745522273 | Paris, France<br>
+        <a href="mailto:tssorokina@edu.hse.ru">tssorokina@edu.hse.ru</a> | 
+        <a href="https://www.linkedin.com/tssorokina/">LinkedIn: tssorokina</a>
+      </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a final year math master's student seeking a position at the intersection of Quantitative and AI Research in Financial Markets starting in November 2025. My background includes financial mathematics, macroeconomic modelling and research, risk analysis for credit portfolio management, and teaching statistics and data science.
+      </p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="subsection">
+        <h3>
+          <a href="https://www.tse-fr.eu/master-mathematics-and-economic-decision"><strong>Master's in Mathematics and Economic Decision</strong></a> – Toulouse School of Economics
+          <span class="date">Sep 2023 - Nov 2025</span>
+        </h3>
+        <p><em>Toulouse, France</em></p>
+        <p>
+          Expected GPA 15.0/20.0<br>
+          Fully-covered tuition fees; <a href="https://www.campusfrance.org/en/eiffel-scholarship-program-of-excellence">merit-based Eiffel Excellence Scholarship</a>; <a href="https://tshtalentfoundation.org/">TSH Talent Foundation</a> fellowship
+        </p>
+        <p>
+          <strong>Coursework:</strong> Functional Analysis, Stochastic Optimal Control, Optimal Transport, Mathematical Game Theory; Optimisation and Statistics of Machine Learning; Program Evaluation, Non-Parametric and Financial Econometrics; Macro-Finance Models in Continuous-Time, Financial Regulation, Capital Markets, Contract Theory
+        </p>
+        <p>
+          <strong>Term Paper:</strong> Feynman–Kac Framework for Parabolic PDEs: Foundations and Application to Option Pricing
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3>
+          <a href="https://www.hse.ru/en/ba/stat/"><strong>Bachelor's in Economics and Statistics (Data Science Minor)</strong></a> – Higher School of Economics
+          <span class="date">2019 - 2023</span>
+        </h3>
+        <p><em>Moscow, Russia</em></p>
+        <p>
+          <a href="https://www.hse.ru/en/ba/stat/ratings">CGPA 4.6/5.0, top 3% of the program</a><br>
+          Fully-covered tuition fees; scholarship for high academic performance
+        </p>
+        <p>
+          <strong>Coursework:</strong> Advanced Statistic Methods, Econometrics; Stochastic Processes, Dynamic Optimisation; Applied ML; Deep Learning, MLOPS; Financial Economics and Markets, Intermediate Micro- and Macro- Economics
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3>
+          <a href="https://www.ensae.fr/en/education/ingenieur-ensae-program/second-year"><strong>Cycle Ingénieur, Statistics, 2nd year</strong></a> – ENSAE - IP Paris
+          <span class="date">Spring Semester 2022</span>
+        </h3>
+        <p><em>Palaiseau, France</em></p>
+        <p>
+          Exchange semester at a leading statistical grande école, courses in French<br>
+          <a href="https://economics.hse.ru/io/news/542937241.html">Merit-based scholarship named after Prof. Lev Lyubumov</a>
+        </p>
+        <p>
+          <strong>Coursework:</strong> Advanced Econometrics, Time Series Modelling; Financial Mathematics and Asset Pricing; International Trade; Non-Life Insurance
+        </p>
+      </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="work">
+      <h2>Work Experience</h2>
+      <div class="subsection">
+        <h3>
+          Quantitative Research Internship <span class="date">May 2025 - Oct 2025</span>
+        </h3>
+        <p>
+          <a href="#">BNP Paribas, Global Markets</a> – <em>Paris, France</em>
+        </p>
+        <ul>
+          <li>Use Graph Neural Network to enhance stock earnings prediction by capturing asset interrelationships</li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>
+          Quantitative Research Internship <span class="date">Jul 2024 - Sep 2024</span>
+        </h3>
+        <p>
+          <a href="#">BNP Paribas, Global Markets</a> – <em>Frankfurt am Main, Germany</em>
+        </p>
+        <ul>
+          <li>Research on Stable Diffusion models for financial data generation</li>
+          <li>Generated data intended for high-frequency algorithmic model back-testing and model impact estimation</li>
+          <li>Working with Transformer, UNet architectures in PyTorch as a base for a diffusion kernel</li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>
+          Risk Analyst, Revolving Credit Products <span class="date">Mar 2023 - Aug 2023</span>
+        </h3>
+        <p>
+          <a href="https://tinkoff-group.com/company-info/summary/">Tinkoff Bank, TCS Group</a> – <em>Moscow, Russia</em>
+        </p>
+        <ul>
+          <li>Developed and integrated a risk-free limit pricing strategy for the main credit product</li>
+          <li>Maintenance and development of statistical models for counter-party risk prediction</li>
+          <li>Research on AB-test sensitivity, NPV-model development</li>
+          <li>Stress tests (Monte-Carlo) of the credit portfolio</li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>
+          Operations Manager <span class="date">Jul 2019 - Jan 2024</span>
+        </h3>
+        <p>
+          Agricultural biotech startup Biofarminvest Ltd. – <em>Ramenskoye, Russia</em>
+        </p>
+        <ul>
+          <li>Production and delivery operations optimisation; research on product line extension; market-monitoring</li>
+          <li>Cross-border sales, connections with international clients, research contracts, CRS development</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Research and Teaching Experience Section -->
+    <section id="research">
+      <h2>Research and Teaching Experience</h2>
+      <div class="subsection">
+        <h3>
+          Research Internship in Macroeconomic Modelling <span class="date">Feb 2023 - Present</span>
+        </h3>
+        <p>
+          <a href="https://economics.hse.ru/gmsm/">HSE, Laboratory of Macro-Structural Modeling of the Russian Economy</a> – <em>Moscow, Russia</em>
+        </p>
+        <ul>
+          <li>Developed a neural-network solution algorithm (PyTorch) for solving high-dimensional empirical dynamic stochastic general equilibrium models; verified model parameters' convergence bounds</li>
+          <li>Conference talk on the identification of parameters in dynamic structural models</li>
+          <li>Automation of data-scraping for monthly now-casting of Russian macroeconomic statistics</li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>
+          Teaching Assistant <span class="date">Sep 2022 - Jul 2024</span>
+        </h3>
+        <p>
+          HSE, Faculties of Economic and Computer Sciences – <em>Moscow, Russia</em>
+        </p>
+        <ul>
+          <li><strong>Data Analysis in Python:</strong> Compiled and taught practice sessions for Bachelor's students in the Economics program; prepared seminars and graded exam papers</li>
+          <li><strong>Introduction to Deep Learning and Applied Data Analysis Problems:</strong> Prepared homework on ML usage for business data, time series analysis, and recommendation systems; graded homework on DL for sound, CV (YOLO model), NLP (transformers), and generative models (GAN, VAE, diffusion models)</li>
+          <li><strong>Macroeconomics:</strong> Gave consultations to Bachelor's students, graded assignments, assembled additional materials for exam preparation, and held the exams</li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>
+          Solving and Estimating Non-Linear HANK Models With Machine Learning <span class="date">Jan 2023 - May 2023</span>
+        </h3>
+        <p>
+          HSE, Faculty of Economic Sciences (supervisor: <a href="https://www.hse.ru/en/org/persons/11532263">Nikolay Pilnik</a>) – <em>Moscow, Russia</em>
+        </p>
+        <ul>
+          <li>Study on Neural Network solution algorithms for structural large-scale dynamic models in economics and finance; survey of the literature on structural parameters identification in dynamic models</li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>
+          Research Internship in Computational Economics with <a href="https://scholar.google.com/citations?user=MZINMrkAAAAJ&hl=en">Pablo Winant</a> <span class="date">Jul 2022 - Aug 2022</span>
+        </h3>
+        <p>
+          <a href="https://crest.science/">Center for Research in Economics and Statistics (CREST)</a> – <em>Palaiseau, France</em>
+        </p>
+        <ul>
+          <li>Research for the article <a href="https://www.sciencedirect.com/science/article/pii/S0304393221000799">"Deep learning for solving dynamic economic models"</a> from a top-10 economic journal</li>
+          <li>Created Neural Network algorithm (TensorFlow, JAX) for solving fundamental dynamic economic models; reviewed existing theoretical frameworks of Deep Learning usage for Computational Economics</li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>
+          Analysing Russian Central Bank Communication Impact on Monetary Policy Effectiveness with NLP <span class="date">Jan 2022 - Jun 2022</span>
+        </h3>
+        <p>
+          HSE, Faculty of Economic Sciences (supervisor: <a href="https://www.linkedin.com/in/mariammamedli?originalSubdomain=sg">Mariam Mamedli</a>) – <em>Moscow, Russia</em>
+        </p>
+        <ul>
+          <li>Customised a transformer model for information extraction on economic topics (Russian language) to quantify the informational component of news and Central Bank's press releases</li>
+          <li>Discovered that accounting for the informational channel of monetary shocks improves the significance of high-frequency shocks as instruments in an SVAR model of the economy</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <table>
+        <tr>
+          <td>Keywords</td>
+          <td>Quantitative Research, Mathematical Finance, Credit Risk Management, Econometrics, Causal Inference, Reinforcement Learning, Generative Models</td>
+        </tr>
+        <tr>
+          <td>Soft Skills</td>
+          <td>Adaptability, Problem-solving, Teamwork, Attention to Detail, Concise Instructions</td>
+        </tr>
+        <tr>
+          <td>Programming</td>
+          <td>Python (TensorFlow, PyTorch, Scikit-Learn, Keras), R, PostgreSQL, Matlab</td>
+        </tr>
+        <tr>
+          <td>Other Software</td>
+          <td>Statistical packages (Stata, EViews, advanced Microsoft Office), Data management (Greenplum, GIT, Bash)</td>
+        </tr>
+        <tr>
+          <td>Languages</td>
+          <td>Russian (native), English (C1, TOEFL 110/120), French (C1, DALF), German (A2)</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Contacts Section -->
+    <section id="contacts">
+      <h2>Contacts</h2>
+      <table>
+        <tr>
+          <td>Nikolay Pilnik</td>
+          <td>
+            PhD in Economics; Assistant Professor at the HSE; Senior Research Fellow (supervisor)<br>
+            Laboratory for Macro-Structural Modeling of the Russian Economy<br>
+            E-mail: <a href="mailto:npilnik@hse.ru">npilnik@hse.ru</a><br>
+            Phone: +7 (495) 772-95-90 (code 27501)<br>
+            Address: 11 Pokrovsky Bulvar, Pokrovka Complex, room T618, Moscow, Russia
+          </td>
+        </tr>
+      </table>
+    </section>
+  </div>
 </body>
 </html>
